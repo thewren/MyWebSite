@@ -15,6 +15,12 @@ class Home(webapp2.RequestHandler):
 		template = config.JINJA_ENVIRONMENT.get_template('templates/home.html')
 		return self.response.write(template.render())
 
+class Other(webapp2.RequestHandler):
+	
+	def get(self):
+
+		template = config.JINJA_ENVIRONMENT.get_template('templates/other.html')
+		return self.response.write(template.render())
 
 
 #
@@ -23,6 +29,7 @@ class Home(webapp2.RequestHandler):
 
 application = webapp2.WSGIApplication([
 
-	('/', Home)
+	('/', Home),
+	('/other', Other)
 
 ])
