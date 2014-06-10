@@ -1,6 +1,8 @@
 #
 # <( 'v' )> Work in Progress <( 'v' )>
 #
+#
+#
 
 import config
 
@@ -21,7 +23,6 @@ class Other(webapp2.RequestHandler):
 
 		template = config.JINJA_ENVIRONMENT.get_template('templates/other.html')
 		return self.response.write(template.render())
-
 
 #
 # Run the application
