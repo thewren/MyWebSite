@@ -1,8 +1,6 @@
 #
 # <( 'v' )> Work in Progress <( 'v' )>
 #
-#
-#
 
 import config
 
