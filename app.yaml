@@ -13,10 +13,10 @@ threadsafe: true
 handlers:
 - url: /static/css
   static_dir: static/css
-- url: /static/assets/js
-  static_dir: static/assets/js
-- url: /static/assets/images
-  static_dir: static/assets/images
+- url: /static/images
+  static_dir: static/images
+- url: /static/js
+  static_dir: static/js
 
 - url: /.*
   script: run.application
