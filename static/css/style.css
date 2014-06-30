@@ -61,6 +61,19 @@
 			width: 100%;
 			background-color: red;
 			height: 0; padding-bottom: 100%;
+			overflow: hidden;
+		}
+
+		.nav-bar-button-text	{
+			color: white;
+			width: 100%;
+			text-align: center;
+			font-weight: bold;
+			margin-top: -20px;
+		}		
+
+		.nav-bar-button > img	{
+			height: 100%;
 		}
 
 	/* Logo */
@@ -119,7 +132,6 @@
 
 		.nav-bar-container	{
 			width: 20%;
-			background-color: #123456;
 			position: absolute;
 			top: 0;
 			bottom: 0;
@@ -141,8 +153,20 @@
 			background-color: red;
 			height: 0; padding-bottom: 100%;
 			border-radius: 1000px;
+			overflow: hidden;
 		}
 
+		.nav-bar-button-text	{
+			color: white;
+			width: 100%;
+			text-align: center;
+			font-weight: bold;
+			margin-top: -30px;
+		}	
+
+		.nav-bar-button > img	{
+			height: 100%;
+		}
 
 
 	/* Logo */
@@ -155,7 +179,6 @@
 			padding: 1%;
 			border-radius: 0px 1000px 1000px 1000px;
 			background-color: white;
-			z-index: 1;
 		}
 
 		.logo	{
@@ -175,13 +198,14 @@
 	/* Main Content */
 
 		.main-content	{
-			background-color: green;
+			background-color: white;
 			padding: 2%;
 			margin: auto;
 			width: 60%;
 			position: absolute;
 			top: 0;
 			left: 20%;
+			border-bottom: 1px solid red;
 		}
 
 		.left-hand-column	{
@@ -190,4 +214,15 @@
 			position: absolute;
 			top: 0;
 			bottom: 0;
+			z-index: -1;
+		}
+
+		.right-hand-column	{
+			width: 20%;
+			background-color: #123456;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			z-index: -1;
 		}
