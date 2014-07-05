@@ -168,6 +168,14 @@
 			height: 100%;
 		}
 
+		.nav-bar-button:hover	{
+			border: 0px solid yellow;
+		}
+
+		.nav-bar-button > img:hover	{
+			height: 105%;
+		}
+
 
 	/* Logo */
 
