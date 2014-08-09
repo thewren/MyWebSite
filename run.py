@@ -12,19 +12,19 @@ class Home(webapp2.RequestHandler):
 	
 	def get(self):
 
-		test = '#333'
+		
 
 		template = config.JINJA_ENVIRONMENT.get_template('templates/home.html')
-		return self.response.write(template.render(test = test))
+		return self.response.write(template.render())
 
 class Other(webapp2.RequestHandler):
 	
 	def get(self):
 
-		test = '#777'
+		
 
 		template = config.JINJA_ENVIRONMENT.get_template('templates/other.html')
-		return self.response.write(template.render(test = test))
+		return self.response.write(template.render())
 
 #
 # Run the application
