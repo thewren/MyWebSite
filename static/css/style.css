@@ -126,6 +126,12 @@
 
 @media (min-width: 992px) {
 
+	/* Global Container */
+
+		.global-container	{
+			width: 100%;
+			background-color: #333;
+		}
 
 
 	/* Navigation Bar */
@@ -221,7 +227,7 @@
 			padding: 2%;
 			margin: auto;
 			width: 60%;
-			position: absolute;
+			/*position: absolute;*/
 			top: 0;
 			left: 20%;
 			border-bottom: 1px solid red;
