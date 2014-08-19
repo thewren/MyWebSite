@@ -245,3 +245,16 @@
 			right: 0;
 			z-index: -1;
 		}
+
+
+	/* Blog Components */
+
+		.blog-container	{
+			padding: 2%;
+			background-color: #333;
+		}
+
+		.blog-title	{
+			padding: 2%;
+			background-color: white;
+		}
