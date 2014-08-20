@@ -32,6 +32,18 @@ class Other(webapp2.RequestHandler):
 		template = config.JINJA_ENVIRONMENT.get_template('templates/other.html')
 		return self.response.write(template.render(randlogo = randint(0, 7)))
 
+class Blog(webapp2.RequestHandler):
+
+	def get(self):
+
+
+		template = config.JINJA_ENVIRONMENT.get_template('templates/blog.html')
+		return self.response.write(template.render(randlogo = randint(0, 7)))
+
+
+
+
+
 #
 # Run the application
 #
@@ -39,6 +51,7 @@ class Other(webapp2.RequestHandler):
 application = webapp2.WSGIApplication([
 
 	('/', Home),
-	('/other', Other)
+	('/other', Other),
+	('/blog', Blog)
 
 ])
