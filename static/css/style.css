@@ -154,6 +154,7 @@
 		.nav-bar-button-container	{
 			width: 100%;
 			margin-top: 10%;
+			opacity: 1;
 		}
 
 		.nav-bar-button	{
@@ -162,35 +163,36 @@
 			height: 0; padding-bottom: 100%;
 			border-radius: 1000px;
 			overflow: hidden;
-			color: white;
 		}
 
 		.nav-bar-button-text	{
-			color: inherit;
+			color: white;
 			width: 100%;
+
 			text-align: center;
 			font-weight: bold;
-			font-size: inherit;
-			margin-top: -30px;
+
+			position: relative;
+			background-color: #333;
+			margin-top: -90%;
+			opacity: inherit;
 		}	
 
 		.nav-bar-button > img	{
 			height: 100%;
 		}
 
-		.nav-bar-button:hover	{
-			border: 0px solid yellow;
-			color: green;
-			font-size: 150%;
+		.nav-bar-button-container:hover	{
+			opacity: .5;
 		}
 
 		.nav-bar-button-text:hover	{
-			margin-top: -60px;
+			
+			
 		}
 
 		.nav-bar-button > img:hover	{
-			height: 105%;
-			color: green;
+			
 		}
 
 
