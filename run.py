@@ -21,7 +21,7 @@ class Home(webapp2.RequestHandler):
 		
 
 		template = config.JINJA_ENVIRONMENT.get_template('templates/home.html')
-		return self.response.write(template.render(randlogo = randint(0, 7)))
+		return self.response.write(template.render(randlogo = randint(0, 6)))
 
 class Other(webapp2.RequestHandler):
 	
@@ -30,7 +30,7 @@ class Other(webapp2.RequestHandler):
 		
 
 		template = config.JINJA_ENVIRONMENT.get_template('templates/other.html')
-		return self.response.write(template.render(randlogo = randint(0, 7)))
+		return self.response.write(template.render(randlogo = randint(0, 6)))
 
 class Blog(webapp2.RequestHandler):
 
@@ -38,7 +38,7 @@ class Blog(webapp2.RequestHandler):
 
 
 		template = config.JINJA_ENVIRONMENT.get_template('templates/blog.html')
-		return self.response.write(template.render(randlogo = randint(0, 7)))
+		return self.response.write(template.render(randlogo = randint(0, 6)))
 
 
 
