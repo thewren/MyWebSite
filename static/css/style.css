@@ -1,13 +1,8 @@
 /*
-	An Extension of bootstrap.css.
-	Built on top of bootstrap.css. (Thanks Bootstrap!)
-*/
-
-/*
 	Display sizes
-		
+
 		Phones
-		
+
 			iPhone 5s:
 				1136-by-640-pixel resolution at 326 ppi
 
@@ -38,79 +33,29 @@
 
 
 
-
-
-
 /* Display width >= 1200px */
+
+
 
 /*@media (min-width: 992px) {*/
 
-	/* Global Container */
 
-		.global-container	{
-			width: 100%;
-			background-color: #333;
-		}
+html {
+	font-family: arial;
+	background-color: white;
+}
+
+body {
+	margin: 2% 14% 0px 14%;
+	border: 1px solid red;
+	background-color: white;
+}
+
 
 
 	/* Navigation Bar */
 
-		.nav-bar-container	{
-			width: 14%;
-			position: fixed;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			/*background-color: #333;*/
-		}
 
-		.nav-bar	{
-			width: 100%;
-			padding: 2% 25% 0% 25%;
-			background-color: transparent;
-		}
-
-		.nav-bar-button-container	{
-			width: 100%;
-			margin-top: 10%;
-			opacity: 1;
-		}
-
-		.nav-bar-button	{
-			width: 100%;
-			background-color: #777;
-			height: 0; padding-bottom: 100%;
-			border-radius: 1000px;
-			overflow: hidden;
-		}
-
-		.nav-bar-button-text	{
-			color: white;
-			width: 100%;
-			height: 0; padding-bottom: 100%; line-height: 100px;
-			text-align: center;
-			font-weight: bold;
-
-			position: relative;
-			background-color: #777;
-			margin-top: -100%;
-			opacity: 0;
-		}	
-
-		.nav-bar-button > img	{
-			width: 100%;
-		}
-
-		.nav-bar-button-container:hover	{
-		}
-
-		.nav-bar-button-text:hover	{
-			opacity: .9;	
-		}
-
-		.nav-bar-button > img:hover	{
-			
-		}
 
 
 	/* Logo */
@@ -121,71 +66,18 @@
 			top: 0;
 			left: 0;
 			padding: 1%;
-			border-radius: 0px 1000px 1000px 1000px;
-			background-color: white;
+			border-radius: 0px 10000px 10000px 10000px;
+			background-color: #999999;
 		}
 
 		.logo	{
 			width: 100%;
 			height: 0; padding-bottom: 100%;
-			background-color: #333;
+			background-color: #888888;
 			overflow: hidden;
-			border-radius: 1000px;
+			border-radius: 10000px;
 		}
 
 		.logo > img	{
 			width: 100%;
-		}
-
-
-
-	/* Main Content */
-
-		.main-content	{
-			background-color: white;
-			padding: 2%;
-			margin: auto;
-			width: 72%;
-			/*position: absolute;*/
-			top: 0;
-			/*left: 20%;*/
-			border-bottom: 1px solid red;
-		}
-
-		.left-hand-column	{
-			width: 14%;
-			background-color: #333;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			z-index: -1;
-		}
-
-		.right-hand-column	{
-			width: 14%;
-			background-color: #333;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			z-index: -1;
-		}
-
-
-	/* Blog Components */
-
-		.blog-container	{
-			padding: 2%;
-			background-color: #333;
-		}
-
-		.blog-title	{
-			padding: 2%;
-			margin-bottom: 2%;
-			background-color: white;
-		}
-
-		.blog-content	{
-			padding: 2%;
-			background-color: white;
 		}

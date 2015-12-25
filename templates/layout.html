@@ -1,75 +1,29 @@
 <!doctype html>
 
 
-<link rel=stylesheet type=text/css href="static/css/style.css">
-<link rel=stylesheet type=text/css href="static/css/bootstrap.css">
+
 
 
 <html>
 <head>
 	<title>Dan</title>
+
+	<link rel=stylesheet type=text/css href="static/css/style.css">
 </head>
 
 
 <body>
-<div class='global-container'>
-	<!-- Navigation Bar -->
-	<div class='nav-bar-container'>
-		<div class='nav-bar'>
-			<div class='nav-bar-button-container'>
-				<div class='nav-bar-button'>
-					<img src='static/images/logos/imageofme_{{randlogo}}.jpg'>
-					<div class='nav-bar-button-text'>
-						11111111
-					</div>
-				</div>
-			</div>
-			<div class='nav-bar-button-container'>
-				<div class='nav-bar-button'>
-					<img src='static/images/logos/imageofme_{{randlogo}}.jpg'>
-					<div class='nav-bar-button-text'>
-						22222222
-					</div>
-				</div>
-			</div>
-			<div class='logo-container'>
-				<div class='logo'>
-					<img src='static/images/logos/imageofme_{{randlogo}}.jpg'>
-				</div>
-			</div>
-			<div class='nav-bar-button-container'>
-				<div class='nav-bar-button'>
-					<img src='static/images/buttons/waves_400x400.gif'>
-					<div class='nav-bar-button-text'>
-						Art
-					</div>
-				</div>
-			</div>
-			<div class='nav-bar-button-container'>
-				<div class='nav-bar-button'>
-					<img src='static/images/buttons/wheel_300x300.gif'>
-					<div class='nav-bar-button-text'>
-						Travel
-					</div>
-				</div>
-			</div>
+
+	<div class='logo-container'>
+		<div class='logo'>
+			<!--<img src='static/images/logos/imageofme_{{randlogo}}.jpg'>-->
 		</div>
 	</div>
 
-	<div class='left-hand-column'>
+	{% block body %}
+	{% endblock %}
 
-	</div>
 
-	<div class='right-hand-column'>
 
-	</div>
-
-	<div class='main-content'>
-
-		{% block body %}
-		{% endblock %}
-
-	</div>
-</div>
 </body>
 </html>
