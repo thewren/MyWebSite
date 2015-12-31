@@ -53,6 +53,34 @@ body {
 
 
 
+	/* Splash Screen */
+
+	#splash-container {
+
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		opacity: 1;
+		background-color: black;
+		transition-property: opacity, 0;
+		transition-duration: 1s, 1s;
+		transition-delay: 0, 1s;
+
+	}
+
+	#splash-container:hover {
+
+		opacity: 0;
+
+		transition-property: opacity, 0;
+		transition-duration: 5s, 5s;
+		transition-delay: 0, 1s;
+
+	}
+
 	/* Navigation Bar */
 
 
