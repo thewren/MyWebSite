@@ -6,24 +6,14 @@
 
 var splashContainer = document.getElementById("splash-container");
 
-function fadeIn(element) {
-  //Gradually make an element transparent, then remove it from the document
-  //var s = element.style;
+function fadeOut(element) {
+  //Wait for a CSS animation to complete, then remove an element from the document
 
-
-  for(var i = 1; i > 0.5; i -= 0.1) {
   window.setTimeout(function() {
-    splashContainer.style.opacity = i;
-  }, 2000);
-    console.log(splashContainer.style.opacity);
-  }
-  //document.body.removeChild(element);
+    document.body.removeChild(element);
+  }, 8900);
 
-
-/*
-  window.setTimeout(function() {
-    splashContainer.style.opacity = 0;
-  }, 2000);
-*/
 
 }
+
+fadeOut(splashContainer);
