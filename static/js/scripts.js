@@ -4,7 +4,7 @@
 
 // Splash Screen
 
-var splashContainer = document.getElementById("splash-container");
+var navFooter = document.getElementById("nav-footer");
 
 function fadeOut(element) {
   //Wait for a CSS animation to complete, then remove an element from the document
@@ -16,4 +16,16 @@ function fadeOut(element) {
 
 }
 
-fadeOut(splashContainer);
+function fixNavFooter() {
+  // Wait for a CSS animation to complete, then permanently set it's height
+  // and prevent further animations. This function is soley for use with the
+  // navigation footer.
+
+  window.setTimeout(function() {
+    navFooter.style.height = 20 + "%";
+  }, 4000)
+
+}
+
+//fadeOut(splashContainer);
+fixNavFooter();

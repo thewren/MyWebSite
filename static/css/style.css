@@ -55,27 +55,41 @@ body {
 
 	/* Splash Screen */
 
-	#splash-container {
+	#nav-footer {
 
-		position: absolute;
+		position: fixed;
+		text-align: center;
 		z-index: 1000;
-		top: 0;
+		height: 100%;
 		left: 0;
 		bottom: 0;
 		width: 100%;
 		opacity: 1;
-		background-color: black;
+		background-color: #4A4A4A;
 
-		animation: 4s linear 5s 1 alternate fade_in;
+		animation: 4s ease 1s 1 alternate scroll_to_bot;
 		/*animation: duration | type | delay | repetitions | direction | function */
 
 	}
 
 	/* The animation function for #splash-container */
-	@keyframes fade_in { from { opacity: 1; } to { opacity: 0; }  }
+	@keyframes scroll_to_bot { from { height: 100%; } to { height: 20%; }  }
 
 
-	/* Navigation Bar */
+	/* Navigation */
+
+	.nav-button-container {
+		display: inline-block;
+		width: 15%;
+		margin: 1%;
+	}
+
+	.nav-button {
+		width: 100%;
+		height: 0; padding-bottom: 50%;
+		border-radius: 5px;
+		background-color: #D8D8D8;
+	}
 
 
 
@@ -83,23 +97,32 @@ body {
 	/* Logo */
 
 		.logo-container	{
+			/*
+			display: inline-block;
 			width: 10%;
-			position: fixed;
-			top: 0;
-			left: 0;
+			margin: 1%;
 			padding: 1%;
-			border: 1px solid #979797;
-			border-radius: 0px 10000px 10000px 10000px;
+			border: 2px solid #979797;
+			border-radius: 10000px 10000px 10000px 10000px;
 			background-color: #E9E9E9;
+			*/
+			display: inline-block;
+			width: 15%;
+			margin-top: 1%; margin-left: 5%; margin-right: 5%;
 		}
 
 		.logo	{
-			width: 100%;
+			/*width: 100%;
 			height: 0; padding-bottom: 100%;
 			background-color: #D8D8D8;
 			overflow: hidden;
 			border: 1px solid #979797;
 			border-radius: 10000px;
+			*/
+			width: 100%;
+			height: 0; padding-bottom: 100%;
+			border-radius: 10000px;
+			background-color: #D8D8D8;
 		}
 
 		.logo > img	{
