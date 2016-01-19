@@ -5,6 +5,8 @@
 // Splash Screen
 
 var navFooter = document.getElementById("nav-footer");
+var navButtons = document.getElementsByClassName("nav-button-container");
+var logo = document.getElementById("logo-container");
 
 function fadeOut(element) {
   //Wait for a CSS animation to complete, then remove an element from the document
@@ -22,8 +24,15 @@ function fixNavFooter() {
   // navigation footer.
 
   window.setTimeout(function() {
-    navFooter.style.height = 20 + "%";
-  }, 4000)
+    //navFooter.style.height = 10 + "%";
+
+    for(var i = 0; i < navButtons.length; i++) {
+      navButtons[i].style.opacity = 1;
+    }
+
+    logo.style.opacity = 1;
+
+  }, 4000);
 
 }
 
