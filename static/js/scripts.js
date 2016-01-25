@@ -37,4 +37,4 @@ function fixNavFooter() {
 }
 
 //fadeOut(splashContainer);
-fixNavFooter();
+//fixNavFooter();
