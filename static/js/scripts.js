@@ -36,5 +36,24 @@ function fixNavFooter() {
 
 }
 
+navButtons[0].onmouseover = function() {
+  navButtons[0].style.color = "green";
+
+  var detail = document.createElement("div");
+  detail.className = "nav-button-detail";
+  var detailText = document.createTextNode("This is a test!");
+  detail.appendChild(detailText);
+  navFooter.appendChild(detail);
+}
+
+navButtons[0].onmouseout = function() {
+  navButtons[0].style.color = "black";
+
+  var detail = document.getElementsByClassName("nav-button-detail");
+  navFooter.removeChild(detail[0]);
+}
+
+
+
 //fadeOut(splashContainer);
 //fixNavFooter();
