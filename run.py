@@ -47,6 +47,13 @@ class Portfolio(webapp2.RequestHandler):
 		template = config.JINJA_ENVIRONMENT.get_template('templates/portfolio.html')
 		return self.response.write(template.render())
 
+class PortfolioPiece(webapp2.RequestHandler):
+
+	def get(self, param):
+
+		template = config.JINJA_ENVIRONMENT.get_template('templates/portfolio.html')
+		print("URL appended with %s") % param
+		return self.response.write(template.render())
 
 
 #
@@ -56,8 +63,9 @@ class Portfolio(webapp2.RequestHandler):
 application = webapp2.WSGIApplication([
 
 	('/', Home),
-	('/portfolio', Portfolio),
 	('/other', Other),
-	('/blog', Blog)
+	('/blog', Blog),
+	('/portfolio', Portfolio),
+	webapp2.Route(r'/portfolio/<param>', handler=PortfolioPiece)
 
 ])

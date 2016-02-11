@@ -17,6 +17,8 @@ handlers:
   static_dir: static/images
 - url: /static/js
   static_dir: static/js
+- url: /portfolio/static/js
+  static_dir: static/js
 
 - url: /.*
   script: run.application
