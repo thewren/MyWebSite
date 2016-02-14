@@ -50,8 +50,7 @@ class Portfolio(webapp2.RequestHandler):
 class PortfolioPiece(webapp2.RequestHandler):
 
 	def get(self, param):
-
-		template = config.JINJA_ENVIRONMENT.get_template('templates/portfolio.html')
+		template = config.JINJA_ENVIRONMENT.get_template('templates/portfolio/%s.html' % param)
 		print("URL appended with %s") % param
 		return self.response.write(template.render())
 
