@@ -7,6 +7,8 @@
 var navFooter = document.getElementById("nav-footer");
 var navButtons = document.getElementsByClassName("nav-button-container");
 var logo = document.getElementById("logo-container");
+//var detail = document.getElementsByClassName("nav-button-detail");
+var detailOpen;
 
 function fadeOut(element) {
   //Wait for a CSS animation to complete, then remove an element from the document
@@ -36,22 +38,40 @@ function fixNavFooter() {
 
 }
 
-navButtons[0].onmouseover = function() {
-  navButtons[0].style.color = "green";
 
-  var detail = document.createElement("div");
-  detail.className = "nav-button-detail";
-  var detailText = document.createTextNode("This is a test!");
-  detail.appendChild(detailText);
-  navFooter.appendChild(detail);
+
+
+navButtons[0].onmouseover = function() {
+
+  if(detailOpen == true) {
+    return;
+  } else {
+    var detail = document.createElement("div");
+    detail.className = "nav-button-detail";
+    var detailText = document.createTextNode("This is a test!");
+    detail.appendChild(detailText);
+    navFooter.appendChild(detail);
+
+    return detailOpen = true;
+  }
 }
 
 navButtons[0].onmouseout = function() {
-  navButtons[0].style.color = "black";
+  var detail = document.getElementsByClassName("nav-button-detail")[0];
 
-  var detail = document.getElementsByClassName("nav-button-detail");
-  navFooter.removeChild(detail[0]);
+  if(detailOpen == true) {
+    detail.onmouseout = function() {
+      navFooter.removeChild(detail);
+      detailOpen = false;
+    }
+    return;
+  } else {
+    navFooter.removeChild(detail);
+    detailOpen = false;
+  }
 }
+
+
 
 
 
