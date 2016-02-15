@@ -4,10 +4,11 @@
 
 // Splash Screen
 
-var navFooter = document.getElementById("nav-bar");
+var navBar = document.getElementById("nav-bar");
 var navButtons = document.getElementsByClassName("nav-button-container");
 var logo = document.getElementById("logo-container");
-//var detail = document.getElementsByClassName("nav-button-detail");
+var navBarSub = document.getElementsByClassName("nav-bar-sub");
+var navBarSubButtons = document.getElementsByClassName("nav-bar-sub-button");
 var detailOpen;
 
 function fadeOut(element) {
@@ -38,7 +39,23 @@ function fixNavFooter() {
 
 }
 
+navButtons[0].onmouseover = function() {
+  navBarSub[0].style.display="block";
+}
 
+for(var i = 0; i < navBarSubButtons.length; i++) {
+  navBarSubButtons[i].onmouseover = function () {
+    navBarSub[0].style.display="block";
+  }
+}
+
+navBarSub[0].onmouseover = function() {
+  navBarSub[0].style.display="block";
+}
+
+navBarSub[0].onmouseout = function() {
+  navBarSub[0].style.display="none";
+}
 
 /*
 navButtons[0].onmouseover = function() {

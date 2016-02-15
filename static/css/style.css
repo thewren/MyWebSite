@@ -60,7 +60,6 @@ body {
 
 		position: fixed;
 		text-align: center;
-		z-index: 1000;
 		/*height: 100%;*/
 		left: 0;
 		top: 0;
@@ -165,10 +164,12 @@ body {
 			position: absolute;
 			width: 100%;
 			top: 100%;
-
+			z-index: 1000;
 			background-color: #D8D8D8;
 			text-align: right;
 			border-bottom: 3px solid #4A4A4A;
+
+			display: none;
 		}
 
 
@@ -180,6 +181,18 @@ body {
 			width: 50px;
 			height: 50px;
 			margin: 10px;
+		}
+
+
+
+		/* Home */
+
+		.home-portrait {
+			position: fixed;
+			left: 0;
+			width: 50%;
+			height: 100%;
+			background-color: black;
 		}
 
 
@@ -221,8 +234,12 @@ body {
 		/* Footer */
 
 		#footer {
-				border-top: 3px solid black;
-				background-color: green;
-				height: 3px;
-				border-bottom: 3px solid black;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				border-top: 3px solid #4A4A4A;
+				background-color: #D8D8D8;
+				height: 114px;
+				width: 100%;
+				border-bottom: 3px solid #4A4A4A;
 		}
