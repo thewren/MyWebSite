@@ -16,8 +16,8 @@ var homeDescription = document.getElementsByClassName("home-description");
 
 // Set height of body
 //body[0].style.height = window.innerHeight - 240 + "px"; //240px = navBar Height + Footer Height
-homePortrait[0].style.height = window.innerHeight - 240 + "px";
-homeDescription[0].style.height = window.innerHeight - 240 + "px";
+homePortrait[0].style.height = window.innerHeight + "px";// - 240 + "px";
+homeDescription[0].style.height = window.innerHeight / 2 + "px";// - 240 + "px";
 
 function fadeOut(element) {
   //Wait for a CSS animation to complete, then remove an element from the document
