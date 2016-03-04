@@ -14,10 +14,57 @@ var homePortrait = document.getElementsByClassName("home-portrait");
 var homeDescription = document.getElementsByClassName("home-description");
 
 
+
 // Set height of body
 //body[0].style.height = window.innerHeight - 240 + "px"; //240px = navBar Height + Footer Height
 //homePortrait[0].style.height = window.innerHeight + "px";// - 240 + "px";
 //homeDescription[0].style.height = window.innerHeight / 2 + "px";// - 240 + "px";
+
+//
+// Home
+//
+
+var homePattern = document.getElementById("home-pattern");
+var homeTitle = document.getElementsByTagName("h1")[0];
+//homePattern.style.height = window.innerHeight - homeTitle.offsetHeight - 50 + "px";
+//homePattern.style.width = window.innerWidth - navBar.offsetWidth - 20 + "px";
+
+function printPattern(ele, pattern) {
+  var counter = 0;
+  var patternHolder = document.createElement("span");
+  ele.appendChild(patternHolder);
+
+  while(patternHolder.offsetWidth < (window.innerWidth - navBar.offsetWidth - 20)) {
+    patternHolder.appendChild(document.createTextNode(pattern));
+    counter += 1;
+    if(counter > (window.innerWidth - navBar.offsetWidth - 20)) {
+      break;
+    }
+  }
+  ele.appendChild(document.createElement("br"));
+}
+
+function drawPattern(ele, pattern1, pattern2) {
+  var counter= 0;
+  while(ele.offsetHeight < (window.innerHeight - homeTitle.offsetHeight - 50)) {
+    if(counter % 2) {
+      printPattern(ele, pattern2);
+    } else {
+      printPattern(ele, pattern1);
+    }
+    counter += 1;
+    if(counter > window.innerHeight) {
+      break;
+    }
+  }
+}
+
+drawPattern(homePattern, "_|__|_||", "|_||_|__");
+
+
+
+
+
 
 function fadeOut(element) {
   //Wait for a CSS animation to complete, then remove an element from the document
