@@ -152,6 +152,11 @@ navButtons[0].onmouseout = function() {
     detailOpen = false;
   }
 }
+
+
+
+
+
 */
 
 

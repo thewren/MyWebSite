@@ -42,7 +42,7 @@
 
 html {
 	font-family: arial;
-	background-color: #D8D8D8;
+	background-color: #FFFFFA;
 }
 
 body {
@@ -72,9 +72,9 @@ h1 {
 		width: 200px;
 		height: 100%;
 		padding: 10px;
-		border-left: 7px solid white;
-		border-right: 3px solid white;
-		background-color: #4A4A4A;
+		border-left: 7px solid #333D33;
+		border-right: 3px solid #FFFFFA;
+		background-color: #FFFFFA;
 
 
 		/*animation: 2s ease 0s 1 alternate scroll_to_bot;*/
@@ -156,16 +156,31 @@ h1 {
 
 		.nav-bar-sub {
 			position: absolute;
-
+			width: 600px;
 			top: 0;
 			left: 101%;
 			height: 100%;
-			z-align: 1000;
+			border-right: 3px solid #4A4A4A;
 			/*background-color: #D8D8D8;*/
-			background-color: #4A4A4A;
-			text-align: center;
+			background-color: #D8D8D8;
 
-			display: none;
+
+			display: block;
+		}
+
+		.nav-bar-sub-column {
+			display: inline-block;
+			width: 200px;
+		}
+
+		.nav-bar-sub-title {
+			width: 150px;
+			margin-left: 25px;
+			margin-right: 25px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 23px;
+			color: #4A4A4A;
 		}
 
 
@@ -188,7 +203,7 @@ h1 {
 			/*width: 0;*/ /*assigned via JS*/
 			/*height: 0;*/ /*assigned via JS*/
 			font-size: 8px;
-			
+
 		}
 
 		.home-portrait > img {
