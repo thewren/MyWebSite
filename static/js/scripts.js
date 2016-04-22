@@ -59,7 +59,7 @@ function drawPattern(ele, pattern1, pattern2) {
   }
 }
 
-drawPattern(homePattern, "_|__|_||", "|_||_|__");
+//drawPattern(homePattern, "_|__|_||", "|_||_|__");
 
 
 
@@ -94,7 +94,7 @@ function fixNavFooter() {
 
 }
 
-navButtons[0].onmouseover = function() {
+navButtons[0].onclick = function() {
   navBarSub[0].style.display="block";
 }
 

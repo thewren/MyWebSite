@@ -73,8 +73,9 @@ h1 {
 		height: 100%;
 		padding: 10px;
 		border-left: 7px solid #333D33;
-		border-right: 3px solid #FFFFFA;
+		border-right: 3px solid #333D33;
 		background-color: #FFFFFA;
+		z-index: 1000;
 
 
 		/*animation: 2s ease 0s 1 alternate scroll_to_bot;*/
@@ -165,7 +166,7 @@ h1 {
 			background-color: #D8D8D8;
 
 
-			display: block;
+			display: none;
 		}
 
 		.nav-bar-sub-column {
@@ -206,10 +207,24 @@ h1 {
 
 		}
 
-		.home-portrait > img {
-			float: right;
+		.home-portrait {
+			position: fixed;
+			top: 0;
+			right: 0;
 			width: 100%;
-			display: block;
+			height: 100%;
+			background-color: green;
+
+			overflow: hidden;
+		}
+
+		.home-portrait > img {
+			/*float: right;*/
+			height: 100%;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			/*display: block;*/
 		}
 
 		.home-description {
