@@ -160,11 +160,12 @@ h1 {
 			position: absolute;
 			width: 600px;
 			top: 0;
-			left: 101%;
+			left: 100%;
 			height: 100%;
-			border-right: 3px solid #4A4A4A;
+			border-left: 3px solid white;
+			border-right: 3px solid white;
 			/*background-color: #D8D8D8;*/
-			background-color: #D8D8D8;
+			background-color: #333D33;
 
 
 			display: none;
@@ -182,7 +183,7 @@ h1 {
 			margin-top: 20px;
 			margin-bottom: 20px;
 			font-size: 23px;
-			color: #4A4A4A;
+
 		}
 
 
