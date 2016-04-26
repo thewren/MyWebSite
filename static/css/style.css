@@ -50,13 +50,13 @@ body {
 	/*margin-top: 120px;*/
 	margin-left: 230px; /*nav-bar width + nav-bar borders*/
 	padding-left: 10px;
-	color: #4A4A4A;
+	color: white;
 }
 
 h1 {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	border-bottom: 3px solid #4A4A4A;
+	border-bottom: 3px solid white;
 }
 
 
@@ -222,6 +222,7 @@ h1 {
 		.home-portrait > img {
 			/*float: right;*/
 			height: 100%;
+			max-height: 960px;
 			position: fixed;
 			bottom: 0;
 			right: 0;
@@ -229,12 +230,14 @@ h1 {
 		}
 
 		.home-description {
-			position: absolute;
-			width: 0%;
-			margin: 10%;
-			height: 500px; /*Assigned via JS*/
-			background-color: #4A4A4A;
-			opacity: 0.75;
+			position: fixed;
+			top: 0;
+			left: 0;
+			padding: 10px;
+			width: 25%;
+			margin-top: 100px;
+			margin-left: 330px;
+			/*height: 500px; /*Assigned via JS*/
 		}
 
 
