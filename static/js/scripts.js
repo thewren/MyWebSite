@@ -6,7 +6,7 @@
 
 var body = document.getElementsByTagName('body');
 var navBar = document.getElementById("nav-bar");
-var navButtons = document.getElementsByClassName("nav-button-container");
+var navButtons = document.getElementsByClassName("nav-button");
 var logo = document.getElementById("logo-container");
 var navBarSub = document.getElementsByClassName("nav-bar-sub");
 var navBarSubButtons = document.getElementsByClassName("nav-bar-sub-button");
