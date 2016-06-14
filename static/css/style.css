@@ -234,7 +234,7 @@ body {
 			position: fixed;
 			top: 0;
 			right: 0;
-			width: 100%;
+			width: 55%;
 			height: 100%;
 			background-color: #333D33;
 
@@ -244,7 +244,8 @@ body {
 		.home-portrait > img {
 			/*float: right;*/
 			height: 100%;
-			max-height: 960px;
+			max-height: 718px;
+			max-width: 492px;
 			position: fixed;
 			bottom: 0;
 			right: 0;
@@ -252,14 +253,46 @@ body {
 		}
 
 		.home-description {
+			width: 100%;
+			padding: 3%;
+			background-color: #333D33;
+			/*height: 500px; /*Assigned via JS*/
+		}
+
+		.home-nav-button-container {
 			position: fixed;
 			top: 0;
 			left: 0;
-			padding: 10px;
-			width: 25%;
-			margin-top: 100px;
-			margin-left: 330px;
-			/*height: 500px; /*Assigned via JS*/
+			width: 45%;
+			height: 100%;
+			background-color: #333333;
+		}
+
+		.home-nav-button {
+			position: relative;
+			width: 33.33%;
+			height: 100%;
+
+			background-color: #999999;
+			display: inline-block;
+			overflow: hidden;
+		}
+
+		.home-nav-button-title {
+			position: absolute;
+			bottom: 10%;
+			width: 100%;
+			text-align: center;
+			font-size: 24px;
+		}
+
+		.home-nav-button-description {
+			position: absolute;
+			top: 25%;
+			width: 100%;
+			text-align: center;
+			margin-top: 10%;
+			margin-bottom: 80%;
 		}
 
 
