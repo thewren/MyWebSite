@@ -21,13 +21,12 @@ var homeDescription = document.getElementsByClassName("home-description");
 //homeDescription[0].style.height = window.innerHeight / 2 + "px";// - 240 + "px";
 
 //
-// Home
+// Pattern
 //
 
-var homePattern = document.getElementById("home-pattern");
-var homeTitle = document.getElementsByTagName("h1")[0];
-//homePattern.style.height = window.innerHeight - homeTitle.offsetHeight - 50 + "px";
-//homePattern.style.width = window.innerWidth - navBar.offsetWidth - 20 + "px";
+var pattern = document.getElementById("pattern");
+var title = document.getElementsByTagName("h1")[0];
+
 
 function printPattern(ele, pattern) {
   var counter = 0;
@@ -46,7 +45,7 @@ function printPattern(ele, pattern) {
 
 function drawPattern(ele, pattern1, pattern2) {
   var counter= 0;
-  while(ele.offsetHeight < (window.innerHeight - homeTitle.offsetHeight - 50)) {
+  while(ele.offsetHeight < (window.innerHeight - title.offsetHeight - 50)) {
     if(counter % 2) {
       printPattern(ele, pattern2);
     } else {
@@ -59,7 +58,7 @@ function drawPattern(ele, pattern1, pattern2) {
   }
 }
 
-//drawPattern(homePattern, "_|__|_||", "|_||_|__");
+drawPattern(homePattern, "_|__|_||", "|_||_|__");
 
 
 
