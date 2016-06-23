@@ -253,10 +253,9 @@ body {
 		}
 
 		.home-description {
-			width: 100%;
-			padding: 3%;
-			background-color: #333D33;
-			/*height: 500px; /*Assigned via JS*/
+			width: 50%;
+			margin-top: 5%;
+			margin-left: 5%;
 		}
 
 		.home-nav-button-container {
@@ -280,6 +279,10 @@ body {
 
 		.home-nav-button > img {
 			height: 100%;
+		}
+
+		.home-nav-button > img:hover {
+			opacity: 0;
 		}
 
 		.home-nav-button-title {
