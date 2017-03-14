@@ -11,6 +11,7 @@ var logo = document.getElementById("logo");
 var navBarSub = document.getElementsByClassName("nav-bar-sub");
 var navBarSubButtons = document.getElementsByClassName("nav-bar-sub-button");
 var homePortrait = document.getElementsByClassName("home-portrait");
+var homePattern = document.getElementById("home-pattern");
 var homeDescription = document.getElementsByClassName("home-description");
 
 
@@ -24,19 +25,16 @@ var homeDescription = document.getElementsByClassName("home-description");
 // Pattern
 //
 
-var pattern = document.getElementById("pattern");
-var title = document.getElementsByTagName("h1")[0];
-
 
 function printPattern(ele, pattern) {
   var counter = 0;
   var patternHolder = document.createElement("span");
   ele.appendChild(patternHolder);
 
-  while(patternHolder.offsetWidth < (window.innerWidth - navBar.offsetWidth - 20)) {
+  while(patternHolder.offsetWidth < (homePortrait[0].offsetWidth)) {
     patternHolder.appendChild(document.createTextNode(pattern));
     counter += 1;
-    if(counter > (window.innerWidth - navBar.offsetWidth - 20)) {
+    if(counter > (homePortrait[0].offsetWidth - 20)) {
       break;
     }
   }
@@ -45,7 +43,7 @@ function printPattern(ele, pattern) {
 
 function drawPattern(ele, pattern1, pattern2) {
   var counter= 0;
-  while(ele.offsetHeight < (window.innerHeight - title.offsetHeight - 50)) {
+  while(ele.offsetHeight < (window.innerHeight)) {
     if(counter % 2) {
       printPattern(ele, pattern2);
     } else {
@@ -58,13 +56,14 @@ function drawPattern(ele, pattern1, pattern2) {
   }
 }
 
-drawPattern(homePattern, "_|__|_||", "|_||_|__");
+//Uncomment drawPattern() to draw the pattern
+//drawPattern(homePattern, "_|__|_||", "|_||_|__");
 
 
 
 
 
-
+/*
 function fadeOut(element) {
   //Wait for a CSS animation to complete, then remove an element from the document
 
@@ -110,6 +109,10 @@ navBarSub[0].onmouseover = function() {
 navBarSub[0].onmouseout = function() {
   navBarSub[0].style.display="none";
 }
+
+
+*/
+
 
 /*
 navButtons[0].onmouseover = function() {
