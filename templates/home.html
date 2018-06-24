@@ -17,48 +17,8 @@
 
 
 
-	<div class="home-portrait">
-		<img src="../static/images/home_portrait_1t.png" />
 
-		<div class="home-description">
-			<h1>
-				Hey there,
-			</h1>
-			<p>
-				My name is Daniel Heinrich. I develop Web applications and write documentation. Sometimes I animate cartoons, and sometimes I play the guitar.
-			</p>
-			<p>
-				Go ahead and have a look around my little corner of the Web. If you'd like to get in touch, please write.
-			</p>
-			<p>
-				Thanks for visiting!
-			</p>
-		</div>
-
-		<div id="home-pattern">
-
-		</div>
-
-	</div>
-
-	<div class="home-nav-button-container">
-		<div class="home-nav-button" style="background-color: #666666;">
-			<div class="home-nav-button-title">
-				Documentation
-			</div>
-			<!--<img src="../static/images/buttons/documentation_1.jpg" />-->
-		</div><!--
-		--><div class="home-nav-button" style="background-color: #555555;">
-		<div class="home-nav-button-title">
-			Design
-		</div>
-		</div><!--
-		--><div class="home-nav-button" style="background-color: #444444;">
-		<div class="home-nav-button-title">
-			Development
-		</div>
-		<!--<img src="../static/images/buttons/development_1.png" />-->
-		</div>
+	<div id="home-pattern">
 	</div>
 
 
@@ -66,10 +26,26 @@
 
 
 
+	{% extends "templates/layout.html" %}
+
+	{% block body %}
+	<div class="home-description">
+		<h1>
+			Hey there,
+		</h1>
+		<p>
+			My name is Daniel Heinrich. I develop Web applications and write documentation. Sometimes I animate cartoons, and sometimes I play the guitar.
+		</p>
+		<p>
+			Go ahead and have a look around my little corner of the Web. If you'd like to get in touch, please write.
+		</p>
+		<p>
+			Thanks for visiting!
+		</p>
+	</div>
+	{% endblock %}
 
 
-
-<script src="static/js/scripts.js"></script>
 
 </body>
 
