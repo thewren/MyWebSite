@@ -35,7 +35,7 @@
 
 html {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	background-color: #333333;
+	background-color: #111111;
 }
 
 body {
@@ -74,9 +74,10 @@ body {
 
 
 /* Display width >= 992px */
+/*
 @media (min-width: 992px) {
-
-
+}
+*/
 
 
 
@@ -94,7 +95,7 @@ body {
 
 
 		/*background-color: #4A4A4A;*/
-		background-color: #333333;
+		background-color: #111111;
 		z-index: 1000;
 
 		/*animation: 2s ease 0s 1 alternate scroll_to_bot;*/
@@ -121,18 +122,22 @@ body {
 		line-height: 100px;
 		overflow: hidden;
 		background-size: 100% 100%;
-		background-color: #444444;
+		background-color: #222222;
 		cursor: pointer;
 		margin-left: 20px; margin-top: 20px; margin-bottom: 20px;
-
 		float: left;
+
+		transition: background-color 3s;
+	}
+
+	.nav-button:hover {
+		background-color: #666666;
 	}
 
 	.nav-portrait {
 
 		width: 0;
 		height: 0; /*padding-bottom: 100%;*/
-		background-color: #333333;
 	}
 
 	.nav-portrait > img {
@@ -277,12 +282,10 @@ body {
 
 
 		.home-description {
-			width: 50%;
-			margin-top: 5%;
-			margin-left: 5%;
-			padding: 3%;
-			background-color: #444444;
-
+			width: 90%;
+			padding: 5%;
+			background-color: #FFFFFA;
+			color: #111111;
 		}
 
 
@@ -292,20 +295,30 @@ body {
 
 		.portfolio-body {
 
-			width: 40%;
+			width: 100%;
+			text-align: justify;
 			padding: 5%;
 			background-color: white;
-			color: black;
+			color: #111111;
+		}
+
+		.portfolio-body-container {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 40%;
+			height: 100%;
+			padding: 5%;
 		}
 
 		.portfolio-portrait {
 			position: fixed;
 			right: 0;
 			top: 0;
-			width: 40%;
+			width: 50%;
 			overflow: hidden;
 			height: 100%;
-			background-color: #444444;/*#333D33*/
+			/*background-color: *#333D33;*/
 		}
 
 		.portfolio-portrait > img {
