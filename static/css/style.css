@@ -127,17 +127,21 @@ body {
 		margin-left: 20px; margin-top: 20px; margin-bottom: 20px;
 		float: left;
 
-		transition: background-color 3s;
+		transition: background-color 1s, color 1s;
 	}
 
 	.nav-button:hover {
-		background-color: #666666;
+		background-color: #FFFFFA;
+		color: #111111;
 	}
 
 	.nav-portrait {
-
+		position: fixed;
+		right:0;
+		bottom: 0;
 		width: 0;
 		height: 0; /*padding-bottom: 100%;*/
+		z-index: 2000;
 	}
 
 	.nav-portrait > img {
@@ -148,6 +152,7 @@ body {
 		position: fixed;
 		bottom: 0;
 		right: 0;
+
 		/*display: block;*/
 	}
 
@@ -213,23 +218,27 @@ body {
 		/* Nav Bar Sub (appears on hover) */
 
 		.nav-bar-sub {
-			position: absolute;
-			width: 600px;
-			top: 0;
-			left: 100%;
-			height: 100%;
-			border-left: 3px solid white;
-			border-right: 3px solid white;
+			position: fixed;
+			width: 100%;
+
+			bottom: 120px;
+			left: 0;
+
+
 			/*background-color: #D8D8D8;*/
-			background-color: #333D33;
+			background-color: #FFFFFA;
 
+			z-index: 1001;
 
-			display: none;
+			/*display: none;*/
 		}
 
 		.nav-bar-sub-column {
-			display: inline-block;
-			width: 200px;
+			float:left;
+			margin: 1% 0 1% 1%;
+			padding: 1%;
+			width: 19%;
+			background-color: #222222;
 		}
 
 		.nav-bar-sub-title {
