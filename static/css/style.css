@@ -35,7 +35,7 @@
 
 html {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	background-color: white;
+	background-color: #222222;
 }
 
 body {
@@ -291,7 +291,7 @@ body {
 			/*width: 0;*/ /*assigned via JS*/
 			/*height: 0;*/ /*assigned via JS*/
 			font-size: 8px;
-
+			margin-left: 10%; margin-right: 33%;
 		}
 
 
