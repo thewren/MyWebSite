@@ -35,13 +35,13 @@
 
 html {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	background-color: #222222;
+	background-color: #111111;
 }
 
 body {
 	margin: 0;
 	/*margin-top: 120px;*/
-	color: white;
+	color: #FFFFFA;
 }
 
 
@@ -146,7 +146,7 @@ body {
 		width: 33%;
 		*height: 0; /*padding-bottom: 100%;*/
 		z-index: 2000;
-		background-color: #111111;
+
 	}
 
 	.nav-portrait > img {
@@ -295,11 +295,9 @@ body {
 		}
 
 
-		.home-description {
-			width: 90%;
-			padding: 5%;
-			background-color: #FFFFFA;
-			color: #111111;
+		#home-description {
+			margin-left: 20%; margin-right: 33%; margin-top: 5%;
+			padding: 3%;
 		}
 
 
