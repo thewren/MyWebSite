@@ -306,12 +306,22 @@ body {
 		/* Portfolio */
 
 		.portfolio-body {
-
-			width: 100%;
+			position: fixed;
+			left: 10%;
+			top: 0;
+			width: 60%;
 			text-align: justify;
-			padding: 5%;
-			background-color: white;
+			padding: 10px;
+			min-height: 100%;
+			background-color: #FFFFFA;
 			color: #111111;
+		}
+
+		.portfolio-note {
+			position: fixed;
+			right: 5%;
+			top: 5%;
+			width: 18%;
 		}
 
 		.portfolio-body-container {
