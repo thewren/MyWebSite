@@ -14,7 +14,25 @@
 	{% extends "templates/layout.html" %}
 
 	{% block body %}
-    <div class="portfolio-note">
+
+    <div id="portfolio-nav-bar">
+      <div class="portfolio-nav-button">
+        Button 1
+      </div>
+      <div class="portfolio-nav-button">
+        Button 2
+      </div>
+      <div class="portfolio-nav-button">
+        Button 3
+      </div>
+      <div class="portfolio-nav-button">
+        Button 4
+      </div>
+      <div class="portfolio-nav-button">
+        Button 5
+      </div>
+    </div>
+    <div id="portfolio-note">
       <p>
         Here you'll find my <ph style="color: blue;">portfolio</ph>,<br />full of both professional and amateur achievements.
       </p>
@@ -25,8 +43,12 @@
          Unfinished projects are the best kind of projects. <ph style="color: yellow;">;)</ph>
       </p>
     </div>
-    <div class="portfolio-body">
+    <div id="portfolio-body">
       Portfolio body
+      <div class="portfolio-item-container">
+        {% block portfolio_item %}
+        {% endblock %}
+      </div>
     </div>
 	{% endblock %}
 

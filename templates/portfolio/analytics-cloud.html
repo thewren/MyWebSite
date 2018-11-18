@@ -1,10 +1,8 @@
 <!doctype html>
 
-{% extends "templates/layout.html" %}
+{% extends "templates/portfolio/portfolio.html" %}
 
-{% block body %}
-<div class="portfolio-body-container">
-	<div class="portfolio-body">
+{% block portfolio_item %}
 		<h1>
 			Salesforce Analytics Cloud
 		</h1>
@@ -18,10 +16,7 @@
 		a bunch of high tech wizardy that lets you run queries on enormous sets of data (think hundreds of thousands, millions, billions of records) in no time at all.
 
 		Analytics Cloud further provides APIs so that external developers can extend the platforms even further.
-	</div>
-</div><!--
-	Comment for in-line block
---><div class="portfolio-portrait">
-	<img src="/static/images/portfolio/analytics_cloud.png" />
-</div>
+
+	<img src="/static/images/portfolio/analytics_cloud.png" style="max-width: 50%;"/>
+
 {% endblock %}
