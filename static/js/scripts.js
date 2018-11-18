@@ -31,10 +31,10 @@ function printPattern(ele, pattern) {
   var patternHolder = document.createElement("span");
   ele.appendChild(patternHolder);
 
-  while(patternHolder.offsetWidth < (homePortrait[0].offsetWidth)) {
+  while(patternHolder.offsetWidth < (homePattern.offsetWidth)) {
     patternHolder.appendChild(document.createTextNode(pattern));
     counter += 1;
-    if(counter > (homePortrait[0].offsetWidth - 20)) {
+    if(counter > (homePattern.offsetWidth - 20)) {
       break;
     }
   }
@@ -43,7 +43,7 @@ function printPattern(ele, pattern) {
 
 function drawPattern(ele, pattern1, pattern2) {
   var counter= 0;
-  while(ele.offsetHeight < (window.innerHeight)) {
+  while(ele.offsetHeight < (window.innerHeight - 8)) {//font size is 8
     if(counter % 2) {
       printPattern(ele, pattern2);
     } else {
