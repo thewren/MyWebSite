@@ -57,7 +57,7 @@ function drawPattern(ele, pattern1, pattern2) {
 }
 
 //Uncomment drawPattern() to draw the pattern
-//drawPattern(homePattern, "_|__|_||", "|_||_|__");
+drawPattern(homePattern, "_|__|_||", "|_||_|__");
 
 
 
