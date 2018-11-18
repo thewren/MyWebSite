@@ -11,6 +11,7 @@
 
 //Get the pattern
 var pattern = document.getElementById("pattern");
+var patternHolder = document.getElementById("pattern-holder");
 
 
 // Set height of body
@@ -25,11 +26,11 @@ var pattern = document.getElementById("pattern");
 
 function printPattern(ele, printThisPattern) {
   var counter = 0;
-  var patternHolder = document.createElement("span");
-  ele.appendChild(patternHolder);
+  var patternSpan = document.createElement("span");
+  ele.appendChild(patternSpan);
 
-  while(patternHolder.offsetWidth < (pattern.offsetWidth)) {
-    patternHolder.appendChild(document.createTextNode(printThisPattern));
+  while(patternSpan.offsetWidth < (pattern.offsetWidth)) {
+    patternSpan.appendChild(document.createTextNode(printThisPattern));
     counter += 1;
     if(counter > (pattern.offsetWidth - 20)) {
       break;
@@ -40,14 +41,14 @@ function printPattern(ele, printThisPattern) {
 
 function drawPattern(ele, pattern1, pattern2) {
   var counter= 0;
-  while(ele.offsetHeight < (window.innerHeight - 8)) {//font size is 8
+  while(ele.offsetHeight < (patternHolder.offsetHeight - 8)) {//font size is 8
     if(counter % 2) {
       printPattern(ele, pattern2);
     } else {
       printPattern(ele, pattern1);
     }
     counter += 1;
-    if(counter > window.innerHeight) {
+    if(counter > window.offsetHeight) {
       break;
     }
   }
