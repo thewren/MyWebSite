@@ -40,6 +40,9 @@ function printPattern(ele, printThisPattern) {
 }
 
 function drawPattern(ele, pattern1, pattern2) {
+  //Make sure the div we are about to print in is empty
+  ele.innerHTML = "";
+
   var counter= 0;
   while(ele.offsetHeight < (patternHolder.offsetHeight - 8)) {//font size is 8
     if(counter % 2) {
