@@ -37,24 +37,27 @@
         Button 5
       </div>
     </div>
-    <div id="portfolio-note">
-      <p>
-        Here you'll find my <ph style="color: blue;">portfolio</ph>,<br />full of both professional and amateur achievements.
-      </p>
-      <p>
-        And lots of <ph style="color: red;">unfinished projects</ph>.
-      </p>
-      <p>
-         Unfinished projects are the best kind of projects. <ph style="color: yellow;">;)</ph>
-      </p>
-    </div>
+
     <div id="portfolio-body">
-      Portfolio body
-      <div class="portfolio-item-container">
+      <div id="portfolio-description">
+        <h1>
+          Portfolio
+        </h1>
+        <p>
+          Here you'll find my <ph style="color: blue;">portfolio</ph>, full of both professional and amateur achievements.
+        </p>
+        <p>
+          And lots of <ph style="color: red;">unfinished projects</ph>.
+        </p>
+        <p>
+           Unfinished projects are the best kind of projects. <ph style="color: yellow;">;)</ph>
+        </p>
+      </div>
         {% block portfolio_item %}
         {% endblock %}
-      </div>
+
     </div>
+
 	{% endblock %}
 
 
