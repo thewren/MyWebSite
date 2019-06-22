@@ -1,9 +1,8 @@
 /*
-	Style file for desktop and large mobile screens
-	Screen size wider than 1024 pixels
-	No @media definition is needed because this is the default style
+	Style file for mobile and small desktop screens
+	Screen size less than 1024 pixels
 
-	For screens less than 1024 pixels in width, see style-mobile.css
+	For screens greater than or equal to 1024 pixels in width, see style-mobile.css
 */
 
 
@@ -13,7 +12,9 @@
 /* No @media definition is needed because this is the default style. */
 
 
-@media (min-width: 1025px) {
+/* Display width <= 1024px */
+
+@media (max-width: 1024px) {
 
 	html {
 		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -73,15 +74,16 @@
 		/* Splash Screen */
 
 		#nav-bar {
+
 			position: fixed;
 			text-align: center;
 			left: 0;
-			bottom: 0;
 			top: 0;
-			width: 8%;
+			width: 100%;
+			height: 200px;
 			padding-left: 1%; padding-right: 1%;
 			background-color: #111111;
-			z-index: 1000;
+			z-index: 10000000000;
 
 			/*animation: 2s ease 0s 1 alternate scroll_to_bot;*/
 			/*animation: duration | type | delay | repetitions | direction | function */
@@ -96,15 +98,18 @@
 		#nav-bar > a, #nav-bar > a:visited, #portfolio-nav-bar > a, #portfolio-nav-bar > a:visited {
 			text-decoration: none;
 			color: white;
+
 		}
 
 
 		/* Navigation */
 
 		.nav-button {
-			width: 100%;
-			height: 100px;
-			line-height: 100px;
+
+			width: 30%; margin-left: 2%;
+			height: 0; padding-bottom: 16%;
+			line-height: 150px;
+			font-size: 48px;
 			overflow: hidden;
 			background-size: 100% 100%;
 			background-color: #222222;
@@ -114,7 +119,7 @@
 
 			float: left;
 
-			transition: background-color 1s, color 1s;
+			/*transition: background-color 1s, color 1s;*/
 		}
 
 		.nav-button:hover {
@@ -123,24 +128,21 @@
 		}
 
 		.nav-portrait {
-			position: fixed;
-			right:0;
-			bottom: 0;
-			top: 0;
-			width: 33%;
-			*height: 0; /*padding-bottom: 100%;*/
-			z-index: 2000;
 
+			width: 100%;
+			/*height: 0; /*padding-bottom: 100%;*/
+			/*z-index: 2000;*/
 		}
 
 		.nav-portrait > img {
+			width: 100%;
 			/*float: right;*/
-			height: 50%;
-			max-height: 50%;/*718px;*/
-			max-width: 30%;/*492px;*/
-			position: fixed;
-			bottom: 0;
-			right: 0;
+			/*height: 50%;*/
+			/*max-height: 50%;/*718px;*/
+			/*max-width: 30%;/*492px;*/
+			/*position: fixed;*/
+			/*bottom: 0;*/
+			/*right: 0;*/
 
 			/*display: block;*/
 		}
@@ -278,7 +280,7 @@
 
 
 			#home-description {
-				margin-left: 20%; margin-right: 33%; margin-top: 5%;
+				margin-left: 5%; margin-right: 5%; margin-top: 200px;
 				padding: 3%;
 			}
 
@@ -312,7 +314,7 @@
 				left: 20%;
 				top: 0;
 				width: 80%;
-
+				margin-top: 200px;
 				min-height: 100%;
 
 			}
