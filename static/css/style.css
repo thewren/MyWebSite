@@ -18,7 +18,7 @@
 	html {
 		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 		text-align: justify;
-		background-color: #111111;
+		background-color: #222222;
 		color: #FFFFFA;
 	}
 
@@ -81,7 +81,7 @@
 			width: 8%;
 			padding-left: 1%; padding-right: 1%;
 			background-color: #111111;
-			z-index: 1000;
+			/*z-index: 1000;*/
 
 			/*animation: 2s ease 0s 1 alternate scroll_to_bot;*/
 			/*animation: duration | type | delay | repetitions | direction | function */
@@ -173,6 +173,16 @@
 			top: 100%;
 			background-color: green;
 			padding: 10px;
+		}
+
+
+		.nav-page-identifier {
+			position: absolute;
+			width: 1%;
+			height: 30px;
+			/*color set in HTML pages*/
+			/*top set in HTML pages*/
+			/*left set in HTML pages*/
 		}
 
 
@@ -296,7 +306,7 @@
 				width: 8%;
 				padding-left: 1%; padding-right: 1%;
 				background-color: #222222;
-				z-index: 1000;
+
 
 				/*animation: 2s ease 0s 1 alternate scroll_to_bot;*/
 				/*animation: duration | type | delay | repetitions | direction | function */
